@@ -27,4 +27,6 @@ int main()
 
     double pi = sqrt(6 * sum);
     printf("%f\n", pi);
+
+    return 0;
 }
