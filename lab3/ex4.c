@@ -1,3 +1,8 @@
+/*  
+    κάνουμε compile γράφοντας στο terminal: gcc -o ex4 ex4.c 
+    τρέχουμε το πρόγραμμα μας γράφοντας στο terminal: ./ex4
+*/
+
 #include <stdio.h>
 
 int main()
