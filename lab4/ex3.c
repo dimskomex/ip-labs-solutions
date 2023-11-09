@@ -3,6 +3,11 @@
     τρέχουμε το πρόγραμμα μας γράφοντας στο terminal: ./ex3
 */
 
+/*
+    TODO: κάνε compile γράφοντας στο terminal: gcc -Wall -Werror -Wextra -o ex3 ex3.c -lm
+    και προσπάθησε να κάνεις το πρόγραμμα να τρέχει χωρίς errors.
+*/
+
 #include <stdio.h>
 #include <math.h>
 
@@ -23,7 +28,7 @@ int main()
         NMM = floor((4 * MM + 23) / 10);
     }
 
-
+    int i;
     int IDAY = 365 * YYYY + DD + 31 * (MM - 1) - NMM + floor(NYYYY / 4.0) - floor((3.0 / 4.0) * (floor(NYYYY / 100.0) + 1));
 
     switch (IDAY % 7) {
