@@ -20,8 +20,10 @@ int fib(int n)
 
 int main(void)
 {
-    for (int i = 28; i <= 35; ++i)
+    for (int i = 28; i <= 35; ++i) {
         printf("Fibonacci for n = %d is: %d\n", i, fib(i));
+        counter--;          // μειώνουμε το πλήθος για να μην έχουμε προσθέσει την κλήση της συνάρτησης που κάναμε εμείς οι ίδιοι
+    }
 
     printf("The fib was called %d times\n", counter);
 
