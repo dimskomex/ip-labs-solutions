@@ -40,6 +40,5 @@ int main(void)
     print_array(a, 8);
 
     printf("\n");
-
     return 0;
 }
