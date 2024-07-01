@@ -2,18 +2,19 @@
 
 int fib(int n)
 {
-    int result;
-    int prev;
-    for (int i = 0; i <= n; ++i) {
-        if (i == 0 || i == 1) {
-            result = 1;
-            prev = 1;
-            continue;
-        }
+    if (n == 0)
+        return 0;
+    else if (n == 1)
+        return 1;
 
-        int temp = result;
-        result += prev;
-        prev = temp;
+    int a = 0; // F(0)
+    int b = 1; // F(1)
+    int result = 0;
+
+    for (int i = 2; i <= n; ++i) {
+        result = a + b;
+        a = b;
+        b = result;
     }
 
     return result;
