@@ -1,7 +1,1 @@
-# IP Labs Solutions
-
-<p text-align="justify">
-
-Welcome to a treasure trove of solutions for the 'Introduction to Programming' (Κ04) course at DIT NKUA! Whether you're debugging your way to success or just curious, dive in and explore how the coding puzzles get solved—one challenge at a time!
-
-</p>
+Βρες όλες τις λύσεις των εργαστηρίων που χρειάζεσαι για το μάθημα «Εισαγωγή στον Προγραμματισμό» (Κ04) του DIT! Είτε προσπαθείς να ξεπεράσεις κάποιο εμπόδιο είτε απλώς θέλεις να δεις πώς λύνονται τα προβλήματα, εδώ θα βρεις έξυπνους τρόπους να το κάνεις!
