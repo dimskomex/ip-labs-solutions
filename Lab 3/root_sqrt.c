@@ -1,44 +1,45 @@
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
 
 int main() {
-    // Αρχικοποίηση του γεννήτριας τυχαίων αριθμών με βάση την τρέχουσα ώρα
-    srand((unsigned int)time(NULL));
+  // Αρχικοποίηση του γεννήτριας τυχαίων αριθμών με βάση την τρέχουσα ώρα
+  srand((unsigned int)time(NULL));
 
-    // Παραγωγή τριών τυχαίων αριθμών στο διάστημα [0, 1] για τους συντελεστές του τριωνύμου
-    double a = 0.000000;
-    double b = 0.000000;
-    double c = 0.000000;
+  // Παραγωγή τριών τυχαίων αριθμών στο διάστημα [0, 1] για τους συντελεστές του
+  // τριωνύμου
+  double a = 0.000000;
+  double b = 0.000000;
+  double c = 0.000000;
 
-    // Εκτύπωση των συντελεστών του τριωνύμου
-    printf("Coefficients:\n");
-    printf("a: %.6f\n", a);
-    printf("b: %.6f\n", b);
-    printf("c: %.6f\n\n", c);
+  // Εκτύπωση των συντελεστών του τριωνύμου
+  printf("Coefficients:\n");
+  printf("a: %.6f\n", a);
+  printf("b: %.6f\n", b);
+  printf("c: %.6f\n\n", c);
 
-    // Υπολογισμός της διακρίνουσας
-    double discriminant = b * b - 4 * a * c;
+  // Υπολογισμός της διακρίνουσας
+  double discriminant = b * b - 4 * a * c;
 
-    if (discriminant > 0) {
-        // Δύο πραγματικές ρίζες
-        double root1 = (-b + sqrt(discriminant)) / (2 * a);
-        double root2 = (-b - sqrt(discriminant)) / (2 * a);
-        printf("The roots are real and different.\n");
-        printf("Root 1: %.3f\n", root1);
-        printf("Root 2: %.3f\n", root2);
-    } else if (discriminant == 0) {
-        // Μία πραγματική διπλή ρίζα
-        double root = -b / (2 * a);
-        printf("The roots are real and equal.\n");
-        printf("Root: %.3f\n", root);
-    } else {
-        // Καμία πραγματική ρίζα
-        printf("The equation has no real roots.\n");
-    }
+  if (discriminant > 0) {
+    // Δύο πραγματικές ρίζες
+    double root1 = (-b + sqrt(discriminant)) / (2 * a);
+    double root2 = (-b - sqrt(discriminant)) / (2 * a);
+    printf("The roots are real and different.\n");
+    printf("Root 1: %.3f\n", root1);
+    printf("Root 2: %.3f\n", root2);
+  } else if (discriminant == 0) {
+    // Μία πραγματική διπλή ρίζα
+    double root = -b / (2 * a);
+    printf("The roots are real and equal.\n");
+    printf("Root: %.3f\n", root);
+  } else {
+    // Καμία πραγματική ρίζα
+    printf("The equation has no real roots.\n");
+  }
 
-    return 0;
+  return 0;
 }
 
 // Μεταγλώττιση:
@@ -47,7 +48,7 @@ int main() {
 // ./root_sqrt
 //
 // Έξοδος με καμία πραγματική ρίζα:
-// 
+//
 // Coefficients:
 // a: 0.485505
 // b: 0.172335
