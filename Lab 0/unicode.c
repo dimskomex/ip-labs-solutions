@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    // Εκτύπωση του Unicode χαρακτήρα 🔥
-    printf("Here is a fire emoji: \U0001F525\n");
+  // Εκτύπωση του Unicode χαρακτήρα 🔥
+  printf("Here is a fire emoji: \U0001F525\n");
 
-    return 0;
+  return 0;
 }
 
 // Μεταγλώττιση:

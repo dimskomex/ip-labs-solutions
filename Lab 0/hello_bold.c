@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    // Εκτύπωση του "Hello world" με έντονη γραφή
-    printf("Hello \033[1mworld\033[0m!\n");
+  // Εκτύπωση του "Hello world" με έντονη γραφή
+  printf("Hello \033[1mworld\033[0m!\n");
 
-    return 0;
+  return 0;
 }
 
 // Μεταγλώττιση:
