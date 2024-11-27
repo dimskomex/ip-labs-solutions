@@ -1,31 +1,31 @@
 #include <stdio.h>
 
 void leibniz(int terms) {
-    double sum_total = 0.0;
-    double current_term;
+  double sum_total = 0.0;
+  double current_term;
 
-    for (int i = 1; i <= terms; i++) {
-        // Υπολογισμός του τρέχοντα όρου (-1)^(i+1) / (2*i - 1)
-        current_term = (i % 2 == 0 ? -1.0 : 1.0) / (2 * i - 1);
-        sum_total += current_term;  // Προσθήκη του όρου στο άθροισμα
-    }
+  for (int i = 1; i <= terms; i++) {
+    // Υπολογισμός του τρέχοντα όρου (-1)^(i+1) / (2*i - 1)
+    current_term = (i % 2 == 0 ? -1.0 : 1.0) / (2 * i - 1);
+    sum_total += current_term;  // Προσθήκη του όρου στο άθροισμα
+  }
 
-    // Εκτύπωση του αποτελέσματος με ακρίβεια 6 δεκαδικών ψηφίων
-    printf("Approximate value of pi/4 with %d terms: %.6f\n", terms, sum_total);
-    printf("Approximate value of pi with %d terms: %.6f\n", terms, 4 * sum_total);
+  // Εκτύπωση του αποτελέσματος με ακρίβεια 6 δεκαδικών ψηφίων
+  printf("Approximate value of pi/4 with %d terms: %.6f\n", terms, sum_total);
+  printf("Approximate value of pi with %d terms: %.6f\n", terms, 4 * sum_total);
 }
 
 int main() {
-    int terms;
+  int terms;
 
-    // Ζητάμε από τον χρήστη τον αριθμό των όρων
-    printf("Enter the number of terms to use: ");
-    scanf("%d", &terms);
+  // Ζητάμε από τον χρήστη τον αριθμό των όρων
+  printf("Enter the number of terms to use: ");
+  scanf("%d", &terms);
 
-    // Κλήση της συνάρτησης
-    leibniz(terms);
+  // Κλήση της συνάρτησης
+  leibniz(terms);
 
-    return 0;
+  return 0;
 }
 
 // Μεταγλώττιση:

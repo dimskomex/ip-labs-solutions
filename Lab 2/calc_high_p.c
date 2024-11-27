@@ -1,26 +1,26 @@
 #include <stdio.h>
 
 int main() {
-    long long int num1, num2;
+  long long int num1, num2;
 
-    // Ζητάμε τον πρώτο μεγάλο αριθμό
-    printf("Please enter the first number: ");
-    if (scanf("%lld", &num1) != 1) {
-        fprintf(stderr, "Invalid input for the first number.\n");
-        return 1;
-    }
+  // Ζητάμε τον πρώτο μεγάλο αριθμό
+  printf("Please enter the first number: ");
+  if (scanf("%lld", &num1) != 1) {
+    printf("Invalid input for the first number.\n");
+    return 1;
+  }
 
-    // Ζητάμε τον δεύτερο μεγάλο αριθμό
-    printf("Please enter the second number: ");
-    if (scanf("%lld", &num2) != 1) {
-        fprintf(stderr, "Invalid input for the second number.\n");
-        return 1;
-    }
+  // Ζητάμε τον δεύτερο μεγάλο αριθμό
+  printf("Please enter the second number: ");
+  if (scanf("%lld", &num2) != 1) {
+    printf("Invalid input for the second number.\n");
+    return 1;
+  }
 
-    // Υπολογίζουμε και τυπώνουμε το άθροισμα
-    printf("The sum of the two numbers is: %lld\n", num1 + num2);
+  // Υπολογίζουμε και τυπώνουμε το άθροισμα
+  printf("The sum of the two numbers is: %lld\n", num1 + num2);
 
-    return 0;  // Επιστρέφουμε επιτυχία
+  return 0;  // Επιστρέφουμε επιτυχία
 }
 
 // Μεταγλώττιση:

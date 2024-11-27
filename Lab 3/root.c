@@ -3,20 +3,20 @@
 #include <time.h>
 
 int main() {
-    // Αρχικοποίηση του γεννήτριας τυχαίων αριθμών με βάση την τρέχουσα ώρα
-    srand((unsigned int)time(NULL));
+  // Αρχικοποίηση του γεννήτριας τυχαίων αριθμών με βάση την τρέχουσα ώρα
+  srand((unsigned int)time(NULL));
 
-    // Παραγωγή τριών τυχαίων αριθμών στο διάστημα [0, 1]
-    double a = (double)rand() / RAND_MAX;
-    double b = (double)rand() / RAND_MAX;
-    double c = (double)rand() / RAND_MAX;
+  // Παραγωγή τριών τυχαίων αριθμών στο διάστημα [0, 1]
+  double a = (double)rand() / RAND_MAX;
+  double b = (double)rand() / RAND_MAX;
+  double c = (double)rand() / RAND_MAX;
 
-    // Εκτύπωση των τριών τυχαίων αριθμών
-    printf("Random number a: %.6f\n", a);
-    printf("Random number b: %.6f\n", b);
-    printf("Random number c: %.6f\n", c);
+  // Εκτύπωση των τριών τυχαίων αριθμών
+  printf("Random number a: %.6f\n", a);
+  printf("Random number b: %.6f\n", b);
+  printf("Random number c: %.6f\n", c);
 
-    return 0;
+  return 0;
 }
 
 // Μεταγλώττιση:
